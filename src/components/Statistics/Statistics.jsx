@@ -32,19 +32,19 @@ class Statistics extends Component {
         <List>
           {Object.entries(stats).map(([key, value]) => {
             return (
-              <Item key={shortid.generate()}>
+              <Item key={key}>
                 <span>{key}: </span>
                 <span>{value}</span>
               </Item>
             );
           })}
 
-          <Item key={shortid.generate()}>
+          <Item key="total">
             <span>total: </span>
             <span>{total}</span>
           </Item>
 
-          <Item key={shortid.generate()}>
+          <Item key="percentage">
             <span>positive feedback: </span>
             <span>{positivePercentage ? positivePercentage + '%' : 0}</span>
           </Item>

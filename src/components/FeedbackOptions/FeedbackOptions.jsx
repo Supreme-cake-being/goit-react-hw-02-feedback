@@ -9,7 +9,7 @@ class FeedbackOptions extends Component {
   };
 
   static propTypes = {
-    options: PropTypes.array.isRequired,
+    options: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
     onLeaveFeedback: PropTypes.func.isRequired,
   };
 

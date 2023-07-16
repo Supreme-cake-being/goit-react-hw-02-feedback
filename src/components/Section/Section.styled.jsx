@@ -2,6 +2,10 @@ import styled from '@emotion/styled';
 
 const Box = styled.div`
   margin-bottom: 24px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 `;
 
 const Title = styled.h1`

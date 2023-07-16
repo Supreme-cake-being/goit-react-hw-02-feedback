@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import shortid from 'shortid';
 import { List, Item } from './Statistics.styled';
 
 class Statistics extends Component {
